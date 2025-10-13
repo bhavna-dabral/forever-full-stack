@@ -1,6 +1,6 @@
 # Forever - Full-Stack E-Commerce Platform
 
-![Forever E-commerce Demo](https://imgur.com/your-gif-url.gif)
+![Forever E-commerce Demo](https://vercel.com/bhavnas-projects-2e67d94c/forever-full-stack)
 ## 📖 Table of Contents
 
 - [About the Project](#-about-the-project)
