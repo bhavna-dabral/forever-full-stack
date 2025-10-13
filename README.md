@@ -1,6 +1,6 @@
 # Forever - Full-Stack E-Commerce Platform
 
-Check out my project here 🚀 -https://vercel.com/bhavnas-projects-2e67d94c/forever-full-stack
+Check out my project here 🚀 -https://forever-full-stack-lake.vercel.app/
 ## 📖 Table of Contents
 
 - [About the Project](#-about-the-project)
