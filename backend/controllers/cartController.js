@@ -74,4 +74,4 @@ const clearCart = async (req, res) => {
     }
 }
 
-export { addToCart, updateCart, getUserCart, clearCart }
+export { addToCart, updateCart, getUserCart, clearCart };

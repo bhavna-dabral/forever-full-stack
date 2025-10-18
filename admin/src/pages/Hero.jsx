@@ -56,7 +56,11 @@ const Hero = ({ token }) => {
     },
     {
       title: 'Total Revenue',
-      value: `$${stats.totalRevenue.toLocaleString()}`,
+      value: `$${
+        typeof stats.totalRevenue === 'number' && !isNaN(stats.totalRevenue)
+          ? stats.totalRevenue.toLocaleString()
+          : '0'
+      }`,
       icon: assets.order_icon,
       color: 'bg-purple-500',
       link: '/orders'

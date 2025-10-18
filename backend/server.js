@@ -12,7 +12,7 @@ import adminRouter from './routes/adminRoute.js';
 
 //App Config
 const app = express();
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 4000 || 5174
 connectDB()
 connectCloudinary()
 
@@ -20,8 +20,11 @@ connectCloudinary()
 // Use raw body for webhook verification on Cashfree route only
 app.use('/api/order/cashfree/webhook', bodyParser.raw({ type: '*/*' }))
 app.use(express.json())
-
-const allowedOrigins = (process.env.ALLOWED_ORIGINS || "http://localhost:5173,http://localhost:5174,https://forever-frontend-lyart.vercel.app").split(',').map(s => s.trim()).filter(Boolean);
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || "http://localhost:3000,http://localhost:5173,http://localhost:5174,https://forever-full-stack-lake.vercel.app")
+  .split(',')
+  .map(s => s.trim())
+  .filter(Boolean);
+;
 
 app.use(cors({
   origin: function (origin, callback) {
