@@ -26,6 +26,11 @@ const allowedOrigins = (process.env.ALLOWED_ORIGINS || "http://localhost:3000,ht
   .filter(Boolean);
 ;
 
+ app.use(cors({
+  origin: '*',
+  credentials: true
+}));
+
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
