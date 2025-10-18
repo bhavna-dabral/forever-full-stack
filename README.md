@@ -1,6 +1,6 @@
 # Forever - Full-Stack E-Commerce Platform
 
-![Forever E-commerce Demo](https://imgur.com/your-gif-url.gif)
+Check out my project here 🚀 -https://forever-full-stack-lake.vercel.app/
 ## 📖 Table of Contents
 
 - [About the Project](#-about-the-project)
