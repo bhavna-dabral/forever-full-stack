@@ -16,23 +16,14 @@ const port = process.env.PORT || 4000 || 5174
 connectDB()
 connectCloudinary()
 
-//Middlewares
-// Use raw body for webhook verification on Cashfree route only
-app.use('/api/order/cashfree/webhook', bodyParser.raw({ type: '*/*' }))
-app.use(express.json())
-const allowedOrigins = (process.env.ALLOWED_ORIGINS || "http://localhost:3000,http://localhost:5173,http://localhost:5174,https://forever-full-stack-lake.vercel.app")
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || "")
   .split(',')
   .map(s => s.trim())
   .filter(Boolean);
-;
-
- app.use(cors({
-  origin: '*',
-  credentials: true
-}));
 
 app.use(cors({
   origin: function (origin, callback) {
+    // allow requests with no origin (e.g., Postman, server-to-server)
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
@@ -41,7 +32,6 @@ app.use(cors({
   },
   credentials: true
 }));
-
 
 //api endpoints
 app.use('/api/user', userRouter)
