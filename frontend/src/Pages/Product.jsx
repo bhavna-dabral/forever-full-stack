@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { ShopContext } from '../Context/ShopContext';
 import { assets } from '../assets/assets';
 import RelatedProducts from '../Components/RelatedProducts';
+import api from "../api/axios";
 
 const Product = () => {
   const { productId } = useParams();

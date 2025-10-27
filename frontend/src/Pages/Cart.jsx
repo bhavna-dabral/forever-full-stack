@@ -5,6 +5,7 @@ import { assets } from '../assets/assets';
 import { CartTotal } from '../Components/CartTotal';
 import { FaPlus, FaSmileBeam } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import api from "../api/axios";
 
 
 const Cart = () => {

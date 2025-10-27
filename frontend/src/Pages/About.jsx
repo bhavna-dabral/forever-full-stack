@@ -1,6 +1,7 @@
 import React from 'react'
 import { Title } from '../Components/Title';
 import { NewsletterBox } from '../Components/NewsletterBox'
+import api from "../api/axios";
 
 
 const About = () => {

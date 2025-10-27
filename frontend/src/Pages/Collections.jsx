@@ -5,6 +5,7 @@ import { Title } from '../Components/Title';
 import ProductItem from '../Components/ProductItem';
 import { CiSearch } from 'react-icons/ci';
 import SearchBar from '../Components/SearchBar';
+import api from "../api/axios";
 
 const Collections = () => {
   const { products, search, showSearch } = useContext(ShopContext);

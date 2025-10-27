@@ -1,4 +1,5 @@
 import React from 'react';
+import api from "../api/axios";
 
 const Delivery = () => (
   <div className="max-w-3xl mx-auto p-6">

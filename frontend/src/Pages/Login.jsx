@@ -3,6 +3,7 @@ import { ShopContext } from '../Context/ShopContext';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import api from "../api/axios";
 
 const Login = () => {
   const [currentState, setCurrentState] = useState('Login');

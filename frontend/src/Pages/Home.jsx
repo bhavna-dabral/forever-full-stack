@@ -4,6 +4,7 @@ import { LatestCollection } from '../Components/LatestCollection'
 import BestSeller  from '../Components/BestSeller'
 import { OurPolicy } from '../Components/OurPolicy'
 import { NewsletterBox } from '../Components/NewsletterBox'
+import api from "../api/axios";
 
 const Home = () => {
   return (

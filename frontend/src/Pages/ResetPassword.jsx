@@ -4,6 +4,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 import { ShopContext } from '../Context/ShopContext'
 import { useNavigate } from 'react-router-dom'
+import api from "../api/axios";
 
 const ResetPassword = () => {
   const { backendUrl } = useContext(ShopContext)

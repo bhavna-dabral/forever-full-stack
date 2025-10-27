@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { assets } from '../assets/assets'
 import { ShopContext } from '../Context/ShopContext'
 import { Link } from 'react-router-dom'
+import api from "../api/axios";
 
 const Profile = () => {
   const { user } = useContext(ShopContext);
