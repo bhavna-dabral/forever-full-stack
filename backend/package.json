@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An E-commerce platform",
   "license": "ISC",
-  "author": "Priyanshi",
+  "author": "Bhavna",
   "main": "server.js",
   "type": "module",
   "scripts": {
