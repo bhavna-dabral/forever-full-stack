@@ -1,6 +1,6 @@
 # Forever - Full-Stack E-Commerce Platform
 
-Check out my project here 🚀 -https://forever-full-stack-lake.vercel.app/
+Check out my project here 🚀 -https://forever-frontend-neon-seven.vercel.app/
 ## 📖 Table of Contents
 
 - [About the Project](#-about-the-project)
